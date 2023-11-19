@@ -11,9 +11,9 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: bale.web.id
-        username: portfolio@bale.web.id
-        password: yPmOTMJKAE
+        server: ${{ secrets.server }}
+        username: ${{ secrets.username }}
+        password: ${{ secrets.password }}
         server-dir: public_html/
         exclude: |
           **/.git*
