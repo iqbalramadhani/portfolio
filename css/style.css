@@ -30150,4 +30150,9 @@ blockquote {
     pointer-events: none;
 }
 
+.crop {
+    width: 610px;
+    height: 750px;
+    overflow: hidden;
+}
 /*# sourceMappingURL=pixel.css.map */

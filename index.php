@@ -21,20 +21,18 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <!-- Primary Meta Tags -->
-  <title>Iqbal Ramadhani</title>
+  <title>Web Dev | Iqbal Ramadhani</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="title" content="Pixel Bootstrap 5 - About company">
   <meta name="author" content="Themesberg">
-  <meta name="description"
-    content="Open source and free Bootstrap 5 UI Kit featuring 80 UI components, 5 example pages, and a Gulp and Sass workflow.">
+  <meta name="description" content="Open source and free Bootstrap 5 UI Kit featuring 80 UI components, 5 example pages, and a Gulp and Sass workflow.">
   <!-- <link rel="canonical" href="https://themesberg.com/product/ui-kit/pixel-free-bootstrap-5-ui-kit"> -->
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <!-- <meta property="og:url" content="https://demo.themesberg.com/pixel-bootstrap-5-ui-kit"> -->
   <meta property="og:title" content="Pixel Bootstrap 5 - About company">
-  <meta property="og:description"
-    content="Open source and free Bootstrap 5 UI Kit featuring 80 UI components, 5 example pages, and a Gulp and Sass workflow.">
+  <meta property="og:description" content="Open source and free Bootstrap 5 UI Kit featuring 80 UI components, 5 example pages, and a Gulp and Sass workflow.">
   <!-- <meta property="og:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/pixel-lite/pixel-lite-preview.jpg"> -->
 
   <!-- Twitter -->
@@ -45,8 +43,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Fontawesome -->
-  <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-    rel="stylesheet">
+  <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet">
 
   <!-- Pixel CSS -->
   <link type="text/css" href="css/style.css" rel="stylesheet">
@@ -58,8 +55,7 @@
 
 
   <header class="header-global">
-    <nav id="navbar-main" aria-label="Primary navigation"
-      class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-dark navbar-theme-secondary">
+    <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-dark navbar-theme-secondary">
       <div class="container position-relative">
         <div class="navbar-collapse collapse me-auto" id="navbar_global">
           <div class="navbar-collapse-header">
@@ -70,18 +66,15 @@
                 </a>
               </div>
               <div class="col-6 collapse-close">
-                <a href="#navbar_global" class="fas fa-times" data-bs-toggle="collapse" data-bs-target="#navbar_global"
-                  aria-controls="navbar_global" aria-expanded="false" title="close" aria-label="Toggle navigation"></a>
+                <a href="#navbar_global" class="fas fa-times" data-bs-toggle="collapse" data-bs-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" title="close" aria-label="Toggle navigation"></a>
               </div>
             </div>
           </div>
         </div>
         <div class="d-flex align-items-center">
-          <a href="cv iqbal ramadhani.pdf" download class="btn btn-tertiary"><i
-              class="fas fa-cloud-download-alt me-2"></i> Download My
+          <a href="cv iqbal ramadhani.pdf" download class="btn btn-tertiary"><i class="fas fa-cloud-download-alt me-2"></i> Download My
             CV</a>
-          <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_global"
-            aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
@@ -100,22 +93,18 @@
             <!-- <a href="#" class="btn btn-tertiary me-3 animate-up-2">What i can do <span class="ms-2"><span class="fas fa-arrow-right"></span></span></a> -->
             <ul class="list-inline mb-0 mt-5">
               <li class="list-inline-item">
-                <a class="icon icon-md icon-github me-3" target="_blank" href="https://github.com/iqbalramadhani"
-                  data-toggle="tooltip" data-placement="top" title="github">
-                  <span class="fab fa-github"></span>
+                <a class="icon icon-md icon-github me-3" target="_blank" href="https://github.com/iqbalramadhani" data-toggle="tooltip" data-placement="top" title="github">
+                  <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" width="43px" alt="github logo">
                 </a>
               </li>
               <li class="list-inline-item">
-                <a class="icon icon-md icon-linkedin me-3" target="_blank"
-                  href="https://www.linkedin.com/in/iqbal-r-ab680411a/" data-toggle="tooltip" data-placement="top"
-                  title="linkedin">
-                  <span class="fab fa-linkedin"></span>
+                <a class="icon icon-md icon-linkedin me-3" target="_blank" href="https://www.linkedin.com/in/iqbal-r-ab680411a/" data-toggle="tooltip" data-placement="top" title="linkedin">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt="linkeind logo" width="40px">
                 </a>
               </li>
               <li class="list-inline-item">
-                <a class="icon icon-md icon-medium" target="_blank" href="https://medium.com/@iqbal.ramadhani55"
-                  data-toggle="tooltip" data-placement="top" title="slack">
-                    <span class="fab fa-medium"></span>
+                <a class="icon icon-md icon-medium" target="_blank" href="https://medium.com/@iqbal.ramadhani55" data-toggle="tooltip" data-placement="top" title="slack">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Medium_logo_Monogram.svg/1200px-Medium_logo_Monogram.svg.png" alt="medium logo" width="40px">
                 </a>
               </li>
             </ul>
@@ -153,11 +142,8 @@
     <!-- Section -->
     <section class="section section-lg bg-gray-200">
       <figure class="position-absolute top-0 left-0 w-100 d-none d-md-block mt-n3">
-        <svg class="fill-gray-200" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4"
-          style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
-          <path
-            d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
+        <svg class="fill-gray-200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
+          <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
           </path>
         </svg>
       </figure>
@@ -219,11 +205,8 @@
         </div>
       </div>
       <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2">
-        <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4"
-          style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
-          <path
-            d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
+        <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
+          <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
           </path>
         </svg>
       </figure>
@@ -231,23 +214,43 @@
     <!-- Section -->
     <section class="section section-lg">
       <div class="container">
-        <div class="row mb-5 mb-lg-6">
+        <div class="row mb-lg-5">
           <div class="col-12 col-md-9 col-lg-8 text-center mx-auto">
-            <h2 class="h1 mb-4">Sample Project</h2>
+            <h2 class="h1">Sample Project</h2>
           </div>
         </div>
-        <div class="row mb-5 mb-lg-6">
+        <div class="row mb-lg-6">
           <div class="col-12 mb-5">
             <div class="card shadow border-gray-300">
               <div class="row">
                 <div class="col-7">
-                  <img src="lms-catalyst.jpeg" class="card-img-top rounded-top" alt="Joseph Portrait">
+                  <div class="crop">
+                    <img src="lms-catalyst-page.jpeg" class="card-img-top rounded-top" alt="Joseph Portrait">
+                  </div>
                 </div>
                 <div class="col">
                   <div class="card-body">
                     <h3 class="h4 card-title mb-2">LMS Catalyst</h3>
                     <span class="card-subtitle text-gray fw-normal">Web Developer</span>
-                    <p class="card-text my-3">Improve feature and bug fix.</p>
+                    <p class="card-text my-2">It can be challenging for students to grasp the concepts taught in class, often due to the
+                      lecturer's use of complex language and a lack of real-life examples.</p>
+                    <p>As alumni from different departments, our aim is to assist students in comprehending the lecture
+                      material by adapting the language to current circumstances and making it more accessible.
+                    </p>
+                    <p>The development of this Learning Management System (LMS) is expected to enhance students'
+                      understanding of the subject matter and enable alumni to share their knowledge and experiences
+                      gained during their studies.
+                    </p>
+                    Technology :
+                    <ul>
+                      <li>HTML</li>
+                      <li>JavaScript</li>
+                      <li>CSS</li>
+                      <li>Boostrap</li>
+                      <li>JQuery</li>
+                      <li>MySQL</li>
+                      <li>PHP (Laravel)</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -263,7 +266,19 @@
                   <div class="card-body">
                     <h3 class="h4 card-title mb-2">Bootcamp Bitslab</h3>
                     <span class="card-subtitle text-gray fw-normal">Frontend Developer</span>
-                    <p class="card-text my-3">Improve feature and bug fix.</p>
+                    <p class="card-text my-3">Currently, the abilities of each individual are really needed in the world of work, with advances in technology, many different types of jobs have emerged with various kinds of abilities that must be possessed.
+                    <p>
+                      Because every individual is busy, whether they are studying or working, they can still develop their abilities according to their interests and can do this anytime and anywhere using their free time.</p>
+                    </p>
+                    <p><strong>Bitlabs</strong> develops a system that can be a forum for improving each person's abilities according to needs in the world of work with the latest technology.</p>
+                    Technology :
+                    <ul>
+                      <li>HTML</li>
+                      <li>JavaScript</li>
+                      <li>CSS</li>
+                      <li>ReactJS</li>
+                      <li>Material UI</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -368,11 +383,8 @@
     </section>
     <section class="section section-lg bg-gray-200">
       <figure class="position-absolute top-0 left-0 w-100 d-none d-md-block mt-n3">
-        <svg class="fill-gray-200" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4"
-          style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
-          <path
-            d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
+        <svg class="fill-gray-200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
+          <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
           </path>
         </svg>
       </figure>
@@ -425,11 +437,8 @@
         </div>
       </div>
       <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2">
-        <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4"
-          style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
-          <path
-            d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
+        <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
+          <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
           </path>
         </svg>
       </figure>
@@ -515,10 +524,10 @@
   <!-- Core -->
   <script src="vendor/@popperjs/core/dist/umd/popper.min.js"></script>
   <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-  <!-- <script src="../../vendor/headroom.js/dist/headroom.min.js"></script> -->
+  <script src="vendor/headroom.js/dist/headroom.min.js"></script>
 
   <!-- Vendor JS -->
-  <!-- <script src="../../vendor/onscreen/dist/on-screen.umd.min.js"></script> -->
+  <script src="vendor/onscreen/dist/on-screen.umd.min.js"></script>
   <script src="vendor/jarallax/dist/jarallax.min.js"></script>
   <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   <script src="vendor/vivus/dist/vivus.min.js"></script>
