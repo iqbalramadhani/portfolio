@@ -21,48 +21,441 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <!-- Primary Meta Tags -->
-  <title>Web Dev | Iqbal Ramadhani</title>
+  <title>Iqbal Ramadhani | Web Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="title" content="Pixel Bootstrap 5 - About company">
-  <meta name="author" content="Themesberg">
-  <meta name="description" content="Open source and free Bootstrap 5 UI Kit featuring 80 UI components, 5 example pages, and a Gulp and Sass workflow.">
-  <!-- <link rel="canonical" href="https://themesberg.com/product/ui-kit/pixel-free-bootstrap-5-ui-kit"> -->
+  <meta name="author" content="Iqbal Ramadhani">
+  <meta name="description" content="Portfolio Iqbal Ramadhani - Web Developer & Backend Engineer dari Bandung.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <!-- <meta property="og:url" content="https://demo.themesberg.com/pixel-bootstrap-5-ui-kit"> -->
-  <meta property="og:title" content="Pixel Bootstrap 5 - About company">
-  <meta property="og:description" content="Open source and free Bootstrap 5 UI Kit featuring 80 UI components, 5 example pages, and a Gulp and Sass workflow.">
-  <!-- <meta property="og:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/pixel-lite/pixel-lite-preview.jpg"> -->
+  <meta property="og:title" content="Iqbal Ramadhani - Web Developer">
+  <meta property="og:description" content="Portfolio Iqbal Ramadhani - Web Developer & Backend Engineer.">
 
-  <!-- Twitter -->
-  <!-- <meta property="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/pixel-lite/pixel-lite-preview.jpg"> -->
+  <!-- Bootstrap CSS -->
+  <link type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Favicon -->
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
+  <!-- Font Awesome -->
+  <link type="text/css" href="vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-  <!-- Fontawesome -->
-  <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-  <!-- Pixel CSS -->
+  <!-- Custom CSS -->
   <link type="text/css" href="css/style.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #1d58a5;
+      --secondary-color: #1c2540;
+      --accent-color: #242e4c;
+      --gradient-1: linear-gradient(135deg, #1c2540 0%, #1d58a5 100%);
+      --gradient-2: linear-gradient(135deg, #1d58a5 0%, #242e4c 100%);
+    }
 
+    body {
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar-main {
+      background: rgba(28, 37, 64, 0.95) !important;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-main.scrolled {
+      padding: 0.5rem 0;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-brand img {
+      height: 35px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: #2c3e50;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero-section::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-title span {
+      color: #f39c12;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: #ffffff;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-image {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-image img {
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.02);
+    }
+
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      margin-right: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+    }
+
+    .social-icon img {
+      width: 22px;
+      height: 22px;
+    }
+
+    /* Section Styles */
+    .section {
+      padding: 5rem 0;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--secondary-color);
+    }
+
+    .section-subtitle {
+      color: #6c757d;
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+    }
+
+    /* About Section */
+    .about-section {
+      background: #ffffff;
+    }
+
+    .about-image {
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .about-image:hover {
+      transform: translateY(-5px);
+    }
+
+    .about-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #495057;
+    }
+
+    /* Experience Timeline */
+    .timeline {
+      position: relative;
+      padding: 2rem 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .timeline-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 16px;
+      height: 16px;
+      background: var(--primary-color);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      border: 3px solid white;
+      box-shadow: 0 0 0 3px var(--primary-color);
+    }
+
+    .timeline-item h4 {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-item h5 {
+      color: var(--secondary-color);
+      font-weight: 500;
+    }
+
+    .timeline-item h5 a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .timeline-item h5 a:hover {
+      color: var(--primary-color);
+    }
+
+    .timeline-item h6 {
+      color: #6c757d;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Project Cards */
+    .project-card {
+      border: none;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card .card-body {
+      padding: 1.5rem;
+    }
+
+    .project-card .card-title {
+      font-weight: 600;
+      color: var(--secondary-color);
+    }
+
+    .project-card .card-subtitle {
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+
+    .tech-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: #e9ecef;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin: 0.25rem;
+      color: #495057;
+    }
+
+    /* Skills Section */
+    .skills-section {
+      background: var(--gradient-2);
+      color: white;
+    }
+
+    .skills-section .section-title {
+      color: white;
+    }
+
+    .skill-category {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .skill-category:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-5px);
+    }
+
+    .skill-category h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+
+    .skill-category ul li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.95rem;
+    }
+
+    .skill-category ul li:last-child {
+      border-bottom: none;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--secondary-color);
+      color: white;
+    }
+
+    footer h5 {
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    footer a {
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #4dabf7 !important;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .timeline::before {
+        left: 30px;
+      }
+
+      .timeline-item {
+        margin-left: 60px;
+      }
+
+      .timeline-item::before {
+        left: -45px;
+        top: 2rem;
+        transform: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero-section {
+        min-height: auto;
+        padding: 4rem 0;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .section {
+        padding: 3rem 0;
+      }
+    }
+  </style>
 
 </head>
 
 <body>
 
-
   <header class="header-global">
-    <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-dark navbar-theme-secondary">
+    <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-dark fixed-top">
       <div class="container position-relative">
         <div class="navbar-collapse collapse me-auto" id="navbar_global">
           <div class="navbar-collapse-header">
             <div class="row">
               <div class="col-6 collapse-brand">
-                <a href="../../index.html">
-                  <img src="assets/img/brand/dark.svg" alt="Themesberg logo">
+                <a href="#">
+                  <img src="assets/img/brand/dark.svg" alt="Logo">
                 </a>
               </div>
               <div class="col-6 collapse-close">
@@ -70,10 +463,26 @@
               </div>
             </div>
           </div>
+          <ul class="navbar-nav navbar-nav-hover">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+          </ul>
         </div>
         <div class="d-flex align-items-center">
-          <a href="cv iqbal ramadhani.pdf" download class="btn btn-tertiary"><i class="fas fa-cloud-download-alt me-2"></i> Download My
-            CV</a>
+          <a href="cv iqbal ramadhani.pdf" download class="btn btn-primary btn-sm"><i class="fas fa-cloud-download-alt me-2"></i>Download CV</a>
           <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -81,434 +490,343 @@
       </div>
     </nav>
   </header>
+
   <main>
 
     <!-- Hero -->
-    <section class="section-header bg-secondary text-white">
+    <section id="hero" class="hero-section">
       <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-12 col-md-7 col-lg-6 text-center text-md-left">
-            <h1 class="display-2 mb-4">Web Developer <br class="d-none d-md-inline">Iqbal Ramadhani</h1>
-            <p class="lead mb-4 text-muted">Build website with common technologi.</p>
-            <!-- <a href="#" class="btn btn-tertiary me-3 animate-up-2">What i can do <span class="ms-2"><span class="fas fa-arrow-right"></span></span></a> -->
-            <ul class="list-inline mb-0 mt-5">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 hero-content">
+            <h1 class="hero-title">Hi, I'm<br><span>Iqbal Ramadhani</span></h1>
+            <p class="hero-subtitle">Web Developer & Backend Engineer<br>Building robust web applications with modern technologies</p>
+            <div class="d-flex mb-4" style="gap:1rem;">
+              <a href="#projects" class="btn btn-lg" style="background:#ffd700;color:#1c2540;border-color:#ffd700;font-weight:600;padding:0.75rem 2rem;border-radius:8px;">View Projects</a>
+              <a href="#contact" class="btn btn-lg" style="background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.8);padding:0.75rem 2rem;border-radius:8px;">Contact Me</a>
+            </div>
+            <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <a class="icon icon-md icon-github me-3" target="_blank" href="https://github.com/iqbalramadhani" data-toggle="tooltip" data-placement="top" title="github">
-                  <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" width="43px" alt="github logo">
+                <a class="social-icon" target="_blank" href="https://github.com/iqbalramadhani" title="GitHub">
+                  <i class="fab fa-github"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a class="icon icon-md icon-linkedin me-3" target="_blank" href="https://www.linkedin.com/in/iqbal-r-ab680411a/" data-toggle="tooltip" data-placement="top" title="linkedin">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt="linkeind logo" width="40px">
+                <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/iqbal-r-ab680411a/" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a class="icon icon-md icon-medium" target="_blank" href="https://medium.com/@iqbal.ramadhani55" data-toggle="tooltip" data-placement="top" title="slack">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Medium_logo_Monogram.svg/1200px-Medium_logo_Monogram.svg.png" alt="medium logo" width="40px">
+                <a class="social-icon" target="_blank" href="https://medium.com/@iqbal.ramadhani55" title="Medium">
+                  <i class="fab fa-medium-m"></i>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="col-12 col-md-5 d-none d-md-block text-center"><img src="" alt=""></div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Hero section -->
-    <!-- Section -->
-    <section class="section section-md">
-      <div class="container">
-        <div class="row align-items-center justify-content-around">
-          <div class="col-md-6 col-xl-6 mb-5">
-            <img class="organic-radius img-fluid" src="1599500921573.jpeg" alt="Office Desk">
-          </div>
-          <div class="col-md-6 col-xl-5 text-center text-md-left">
-            <h2 class="h1 mb-5">About Me</h2>
-            <p class="lead">Hello, my name is Iqbal Ramadhani, I am a programmer from Bandung. I had a work experience
-              as a backend engineer. I did
-              work on internal or external projects for BUMN (state-owned enterprises) and private companiess, I was
-              working with PHP
-              and Python. The framework I used was Laravel with the database MySQL.</p>
-            <p class="lead">Sometimes I would do freelancing work with
-              friends, I did a project for education or private company. I like to study programming languages, it is
-              because I can
-              learn more and see new technologies. I hope sometimes later I can help the company I'm working for to
-              educate a lot of
-              people about information technology.</p>
+          <div class="col-12 col-lg-6 text-center hero-image mt-5 mt-lg-0">
+            <img src="1599500921573.jpeg" class="img-fluid" alt="Iqbal Ramadhani">
           </div>
         </div>
       </div>
     </section>
-    <!-- End of section -->
-    <!-- Section -->
-    <section class="section section-lg bg-gray-200">
-      <figure class="position-absolute top-0 left-0 w-100 d-none d-md-block mt-n3">
-        <svg class="fill-gray-200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
-          <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
-          </path>
-        </svg>
-      </figure>
+
+    <!-- About -->
+    <section id="about" class="section about-section">
       <div class="container">
-        <div class="row text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="text-center mb-5">
+              <h2 class="section-title">About Me</h2>
+            </div>
+            <p class="about-text text-center">Hello, my name is Iqbal Ramadhani, I am a programmer from Bandung. I have work experience as a backend engineer. I have worked on internal and external projects for BUMN (state-owned enterprises) and private companies, using PHP and Python with Laravel framework and MySQL database.</p>
+            <p class="about-text text-center">I also do freelancing work with friends, completing projects for education and private companies. I enjoy learning new programming languages and technologies. My goal is to help educate people about information technology.</p>
+            <div class="row mt-4 justify-content-center">
+              <div class="col-6 col-md-3 mb-3">
+                <div class="text-center">
+                  <h3 class="fw-bold" style="color: #1d58a5;">3+</h3>
+                  <p class="text-muted">Years Experience</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 mb-3">
+                <div class="text-center">
+                  <h3 class="fw-bold" style="color: #1d58a5;">10+</h3>
+                  <p class="text-muted">Projects Completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="row text-center mb-5">
           <div class="col">
-            <h2 class="h1 fw-light"><span class="fw-bold">Experience</span> </h2>
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">My professional journey in the tech industry</p>
           </div>
         </div>
-        <div class="row justify-content-center mt-6">
-          <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-8">
-              <div class="timeline timeline-one dark px-3 px-sm-0">
-                <!-- Timeline Item 1 -->
-                <div class="timeline-item">
-                  <h4 class="">PHP Developer</h4>
-                  <a href="https://idexpress.com/">
-                    <h5>ID Express</h5>
-                  </a>
-                  <h6>January 2023 - April 2024</h6>
-                  <p>Develop features and make improvements and bug fixes to the system
-                    and work together as a team to develop new systems for customers.</p>
-                </div>
-                <div class="timeline-item">
-                  <h3 class="h4">Full-stack Developer</h3>
-                  <a href="https://rekaciptadigital.id/">
-                    <h5>Reka Cipta Digital</h5>
-                  </a>
-                  <h6>April 2022 - January 2023</h6>
-                  <p>Work on company projects and make improvements for the backend or frontend with the collaboration
-                    of the UI/UX team.</p>
-                </div>
-                <div class="timeline-item">
-                  <h3 class="h4">Web Developer</h3>
-                  <a href="https://www.dhealth.co.id/">
-                    <h5>D'Health</h5>
-                  </a>
-                  <h6>July 2021 - April 2022</h6>
-                  <p>Develope and improve feature.</p>
-                </div>
-                <div class="timeline-item">
-                  <h3 class="h4">Back End Developer</h3>
-                  <a href="https://www.karyaekanala.com/">
-                    <h5>Karya Eka Nala</h5>
-                  </a>
-                  <h6>June 2020 - June 2021</h6>
-                  <p>Working on existing projects in the company developing products and conducting research for company
-                    products.</p>
-                </div>
-
-                <div class="timeline-item">
-                  <h3 class="h4">Freelancer</h3>
-                  <h6>2019 - Present</h6>
-                  <p>Developing systems for government, private companies and small and medium businesses.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2">
-        <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
-          <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
-          </path>
-        </svg>
-      </figure>
-    </section>
-    <!-- Section -->
-    <section class="section section-lg">
-      <div class="container">
-        <div class="row mb-lg-5">
-          <div class="col-12 col-md-9 col-lg-8 text-center mx-auto">
-            <h2 class="h1">Sample Project</h2>
-          </div>
-        </div>
-        <div class="row mb-lg-6">
-          <div class="col-12 mb-5">
-            <div class="card shadow border-gray-300">
-              <div class="row">
-                <div class="col-7">
-                  <div class="crop">
-                    <img src="lms-catalyst-page.jpeg" class="card-img-top rounded-top" alt="Joseph Portrait">
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card-body">
-                    <h3 class="h4 card-title mb-2">LMS Catalyst</h3>
-                    <span class="card-subtitle text-gray fw-normal">Web Developer</span>
-                    <p class="card-text my-2">It can be challenging for students to grasp the concepts taught in class, often due to the
-                      lecturer's use of complex language and a lack of real-life examples.</p>
-                    <p>As alumni from different departments, our aim is to assist students in comprehending the lecture
-                      material by adapting the language to current circumstances and making it more accessible.
-                    </p>
-                    <p>The development of this Learning Management System (LMS) is expected to enhance students'
-                      understanding of the subject matter and enable alumni to share their knowledge and experiences
-                      gained during their studies.
-                    </p>
-                    Technology :
-                    <ul>
-                      <li>HTML</li>
-                      <li>JavaScript</li>
-                      <li>CSS</li>
-                      <li>Boostrap</li>
-                      <li>JQuery</li>
-                      <li>MySQL</li>
-                      <li>PHP (Laravel)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 mb-5">
-            <div class="card shadow border-gray-300">
-              <div class="row">
-                <div class="col-7">
-                  <img src="bitslab.jpeg" class="card-img-top rounded-top" alt="Joseph Portrait">
-                </div>
-                <div class="col">
-                  <div class="card-body">
-                    <h3 class="h4 card-title mb-2">Bootcamp Bitslab</h3>
-                    <span class="card-subtitle text-gray fw-normal">Frontend Developer</span>
-                    <p class="card-text my-3">Currently, the abilities of each individual are really needed in the world of work, with advances in technology, many different types of jobs have emerged with various kinds of abilities that must be possessed.
-                    <p>
-                      Because every individual is busy, whether they are studying or working, they can still develop their abilities according to their interests and can do this anytime and anywhere using their free time.</p>
-                    </p>
-                    <p><strong>Bitlabs</strong> develops a system that can be a forum for improving each person's abilities according to needs in the world of work with the latest technology.</p>
-                    Technology :
-                    <ul>
-                      <li>HTML</li>
-                      <li>JavaScript</li>
-                      <li>CSS</li>
-                      <li>ReactJS</li>
-                      <li>Material UI</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 mb-5">
-            <div class="card shadow border-gray-300">
-              <div class="row">
-                <div class="col-7">
-                  <img src="inamarket.jpeg" class="card-img-top rounded-top" alt="Joseph Portrait">
-                </div>
-                <div class="col">
-                  <div class="card-body">
-                    <h3 class="h4 card-title mb-2">Inamarket</h3>
-                    <span class="card-subtitle text-gray fw-normal">Backend Developer</span>
-                    <p class="card-text my-3">Improve feature and bug fix.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 mb-5">
-            <div class="card shadow border-gray-300">
-              <div class="row">
-                <div class="col-7">
-                  <img src="samair.png" class="card-img-top rounded-top" alt="Bonnie portrait">
-                </div>
-                <div class="col">
-                  <div class="card-body">
-                    <h3 class="h4 card-title mb-2">Sam Air</h3>
-                    <span class="card-subtitle text-gray fw-normal">Web Developer</span>
-                    <p class="card-text my-3">Developing a monitoring and archive information system at the Sam Air
-                      Company.
-                    </p>
-                    <div class="my-3">
-                      Tecnology :
-                      <span class="icon icon-sm icon-danger me-2"><span class="fab fa-html5"></span></span>
-                      <span class="icon icon-sm icon-warning me-2"><span class="fab fa-js"></span></span>
-                      <span class="icon icon-sm icon-purple me-2"><span class="fab fa-bootstrap"></span></span>
-                      <span class="icon icon-sm icon-danger me-2"><span class="fab fa-laravel"></span></span>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 mb-5">
-            <div class="card shadow border-gray-300">
-              <div class="row">
-                <div class="col-7">
-                  <img src="lab-fmipa.jpeg" class="card-img-top rounded-top" alt="Bonnie portrait">
-                </div>
-                <div class="col">
-                  <div class="card-body">
-                    <h3 class="h4 card-title mb-2">Lab FMIPA Air</h3>
-                    <span class="card-subtitle text-gray fw-normal">Web Developer</span>
-                    <p class="card-text my-3">Build a website for laboratory management at the FMIPA lab ITB</p>
-                    <div class="my-3">
-                      Tecnology :
-                      <span class="icon icon-sm icon-danger me-2"><span class="fab fa-html5"></span></span>
-                      <span class="icon icon-sm icon-warning me-2"><span class="fab fa-js"></span></span>
-                      <span class="icon icon-sm icon-purple me-2"><span class="fab fa-bootstrap"></span></span>
-                      <span class="icon icon-sm icon-danger me-2"><span class="fab fa-laravel"></span></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="card shadow border-gray-300">
-              <div class="row justify-content-center">
-                <div class="col-7">
-                  <div class="text-center">
-                    <img src="nusaku.jpeg" width="400px" class="rounded-top" alt="Bonnie portrait">
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card-body">
-                    <h3 class="h4 card-title mb-2">Nusaku</h3>
-                    <span class="card-subtitle text-gray fw-normal">Frontend Developer</span>
-                    <p class="card-text my-3">The Nusaku website provides facilities for everyone to capture and provide
-                      information on interesting tourist attractions in Indonesia.</p>
-                    <p>
-                      I am currently working on developing the appearance of the Nusaku website in the mobile version so
-                      that it looks better
-                      with additional customized features.
-                    </p>
-                    <div class="my-3">
-                      Tecnology :
-                      <span class="icon icon-sm icon-purple me-2"><span class="fab fa-bootstrap"></span></span>
-                      <span class="icon icon-sm icon-info me-2"><span class="fab fa-react"></span></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section section-lg bg-gray-200">
-      <figure class="position-absolute top-0 left-0 w-100 d-none d-md-block mt-n3">
-        <svg class="fill-gray-200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
-          <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
-          </path>
-        </svg>
-      </figure>
-      <div class="container">
-        <div class="section section-sm">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-12 col-md-8 text-center mb-0 mb-md-6">
-                <h2 class="display-2 fw-bold">
-                  Skills
-                </h2>
-                <p class="lead"></p>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-12 col-sm-4 col-md-3 mb-4 mb-md-0">
-                <ul class="list-unstyled">
-                  <li class="list-item h3 mb-4">Development</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">HTML</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">CSS</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">PHP</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">Python</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">Java</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">Golang</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">Javascript + jQuery</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">API Integrations</li>
-                </ul>
-              </div>
-              <div class="col-12 col-sm-4 col-md-3 mb-4 mb-md-0">
-                <ul class="list-unstyled">
-                  <li class="list-item h3 mb-4">Framework</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">CodeIgniter</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">Laravel</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">ReactJs</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">Flask</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">Django</li>
-                </ul>
-              </div>
-              <div class="col-12 col-sm-4 col-md-3">
-                <ul class="list-unstyled">
-                  <li class="list-item h3 mb-4">Software</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">Postman</li>
-                  <li class="list-item h6 fw-normal mb-3 text-muted">Swagger</li>
-                  <li class="list-item h6 fw-normal text-muted">Visual Studio Code</li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2">
-        <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
-          <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z">
-          </path>
-        </svg>
-      </figure>
-    </section>
-    <!-- <section>
-      <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-4 text-center">
-            <div class="icon-box mb-4">
-              <div class="icon icon-secondary-app mb-4">
-                <span class="fas fa-map-marker-alt"></span>
+          <div class="col-lg-8 mx-auto">
+            <div class="timeline">
+              <!-- Timeline Item 1 -->
+              <div class="timeline-item">
+                <div class="row">
+                  <div class="col-8">
+                    <h4>PHP Developer</h4>
+                    <h5><a href="https://idexpress.com/">ID Express</a></h5>
+                    <h6>January 2023 - April 2024</h6>
+                    <p>Develop features, improve systems, fix bugs, and work collaboratively as a team to develop new systems for customers.</p>
+                  </div>
+                </div>
               </div>
-              <h2 class="h5 icon-box-title">Visit me</h2>
-              <span>
-                27 Silicon Valley
-                <br>USA, California
-              </span>
+              <!-- Timeline Item 2 -->
+              <div class="timeline-item">
+                <div class="row">
+                  <div class="col-8">
+                    <h4>Full-stack Developer</h4>
+                    <h5><a href="https://rekaciptadigital.id/">Reka Cipta Digital</a></h5>
+                    <h6>April 2022 - January 2023</h6>
+                    <p>Worked on company projects and made improvements for backend and frontend with collaboration of the UI/UX team.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Timeline Item 3 -->
+              <div class="timeline-item">
+                <div class="row">
+                  <div class="col-8">
+                    <h4>Web Developer</h4>
+                    <h5><a href="https://www.dhealth.co.id/">D'Health</a></h5>
+                    <h6>July 2021 - April 2022</h6>
+                    <p>Developed and improved features for the health management system.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Timeline Item 4 -->
+              <div class="timeline-item">
+                <div class="row">
+                  <div class="col-8">
+                    <h4>Backend Developer</h4>
+                    <h5><a href="https://www.karyaekanala.com/">Karya Eka Nala</a></h5>
+                    <h6>June 2020 - June 2021</h6>
+                    <p>Worked on existing projects in the company, developing products and conducting research for company products.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Timeline Item 5 -->
+              <div class="timeline-item">
+                <div class="row">
+                  <div class="col-8">
+                    <h4>Freelancer</h4>
+                    <h6>2019 - Present</h6>
+                    <p>Developing systems for government, private companies and small and medium businesses.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-sm-4 text-center">
-            <div class="icon-box mb-4">
-              <div class="icon icon-secondary-app mb-4">
-                <span class="fas fa-phone-volume"></span>
-              </div>
-              <h2 class="h5 icon-box-title">Call</h2>
-              <span>+3912345678</span>
-              <div class="text-small text-gray">
-                Mon - Fri, 8am - 4pm
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section bg-light">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Some of the projects I've worked on</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card">
+              <img src="lms-catalyst-page.jpeg" class="card-img-top" alt="LMS Catalyst">
+              <div class="card-body">
+                <h3 class="h5 card-title">LMS Catalyst</h3>
+                <span class="card-subtitle">Web Developer</span>
+                <p class="card-text mt-2 small">Learning Management System to help students comprehend lecture material more easily.</p>
+                <div class="mt-3">
+                  <span class="tech-badge">HTML</span>
+                  <span class="tech-badge">CSS</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">Laravel</span>
+                  <span class="tech-badge">MySQL</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-4 text-center">
-            <div class="icon-box mb-4">
-              <div class="icon icon-secondary-app mb-4">
-                <span class="far fa-paper-plane"></span>
+          <!-- Project 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card">
+              <img src="bitslab.jpeg" class="card-img-top" alt="Bootcamp Bitslab">
+              <div class="card-body">
+                <h3 class="h5 card-title">Bootcamp Bitslab</h3>
+                <span class="card-subtitle">Frontend Developer</span>
+                <p class="card-text mt-2 small">Platform for improving individual abilities according to needs in the world of work.</p>
+                <div class="mt-3">
+                  <span class="tech-badge">ReactJS</span>
+                  <span class="tech-badge">Material UI</span>
+                  <span class="tech-badge">JavaScript</span>
+                </div>
               </div>
-              <h2 class="h5 icon-box-title">Email</h2>
-              <a href="#">hello@themesberg.com</a>
             </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card">
+              <img src="inamarket.jpeg" class="card-img-top" alt="Inamarket">
+              <div class="card-body">
+                <h3 class="h5 card-title">Inamarket</h3>
+                <span class="card-subtitle">Backend Developer</span>
+                <p class="card-text mt-2 small">E-commerce platform with improved features and bug fixes.</p>
+                <div class="mt-3">
+                  <span class="tech-badge">PHP</span>
+                  <span class="tech-badge">Laravel</span>
+                  <span class="tech-badge">MySQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card">
+              <img src="samair.png" class="card-img-top" alt="Sam Air">
+              <div class="card-body">
+                <h3 class="h5 card-title">Sam Air</h3>
+                <span class="card-subtitle">Web Developer</span>
+                <p class="card-text mt-2 small">Monitoring and archive information system for Sam Air Company.</p>
+                <div class="mt-3">
+                  <span class="tech-badge">HTML</span>
+                  <span class="tech-badge">Bootstrap</span>
+                  <span class="tech-badge">Laravel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card">
+              <img src="lab-fmipa.jpeg" class="card-img-top" alt="Lab FMIPA">
+              <div class="card-body">
+                <h3 class="h5 card-title">Lab FMIPA ITB</h3>
+                <span class="card-subtitle">Web Developer</span>
+                <p class="card-text mt-2 small">Website for laboratory management at FMIPA ITB.</p>
+                <div class="mt-3">
+                  <span class="tech-badge">HTML</span>
+                  <span class="tech-badge">Bootstrap</span>
+                  <span class="tech-badge">Laravel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card">
+              <img src="nusaku.jpeg" class="card-img-top" alt="Nusaku">
+              <div class="card-body">
+                <h3 class="h5 card-title">Nusaku</h3>
+                <span class="card-subtitle">Frontend Developer</span>
+                <p class="card-text mt-2 small">Website providing information on interesting tourist attractions in Indonesia.</p>
+                <div class="mt-3">
+                  <span class="tech-badge">ReactJS</span>
+                  <span class="tech-badge">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8)">Technologies and tools I work with</p>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-12 col-lg-8">
-            <div class="card border-0 p-lg-3">
-              <div class="card-header bg-white border-0 text-center">
-                <h2>Want to work with me?</h2>
-                <p>Let’s talk about your project</p>
-              </div>
-              <div class="card-body pt-0">
-                <form action="#">
-                  <div class="mb-4">
-                    <label for="name">Your Name</label>
-                    <div class="input-group">
-                      <span class="input-group-text" id="basic-addon3"><span class="fas fa-user-circle"></span></span>
-                      <input type="text" class="form-control" placeholder="e.g. Bonnie Green" id="name" required>
+          <div class="col-md-4 mb-4">
+            <div class="skill-category">
+              <h3><i class="fas fa-code me-2"></i>Development</h3>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check me-2"></i>HTML/CSS</li>
+                <li><i class="fas fa-check me-2"></i>PHP</li>
+                <li><i class="fas fa-check me-2"></i>Python</li>
+                <li><i class="fas fa-check me-2"></i>JavaScript/jQuery</li>
+                <li><i class="fas fa-check me-2"></i>Java</li>
+                <li><i class="fas fa-check me-2"></i>Golang</li>
+                <li><i class="fas fa-check me-2"></i>API Integrations</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="skill-category">
+              <h3><i class="fas fa-layer-group me-2"></i>Frameworks</h3>
+              <ul class="list-unstyled">
+                <li><i class="fab fa-laravel me-2"></i>Laravel</li>
+                <li><i class="fab fa-bootstrap me-2"></i>CodeIgniter</li>
+                <li><i class="fab fa-react me-2"></i>ReactJS</li>
+                <li><i class="fab fa-python me-2"></i>Flask</li>
+                <li><i class="fab fa-python me-2"></i>Django</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="skill-category">
+              <h3><i class="fas fa-tools me-2"></i>Software</h3>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-terminal me-2"></i>VS Code</li>
+                <li><i class="fas fa-file-code me-2"></i>Postman</li>
+                <li><i class="fas fa-book me-2"></i>Swagger</li>
+                <li><i class="fab fa-git-alt me-2"></i>Git/GitHub</li>
+                <li><i class="fas fa-database me-2"></i>MySQL</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card shadow border-0">
+              <div class="card-body p-5">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input type="text" class="form-control form-control-lg" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <label for="email" class="form-label">Your Email</label>
+                      <input type="email" class="form-control form-control-lg" id="email" placeholder="john@example.com" required>
                     </div>
                   </div>
                   <div class="mb-4">
-                    <label for="email">Your Email</label>
-                    <div class="input-group">
-                      <span class="input-group-text" id="basic-addon4"><span class="fas fa-envelope"></span></span>
-                      <input type="email" class="form-control" placeholder="example@company.com" id="email" required>
-                    </div>
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control form-control-lg" id="subject" placeholder="Project Inquiry" required>
                   </div>
                   <div class="mb-4">
-                    <label for="message">Your Message</label>
-                    <textarea placeholder="Your message" class="form-control" id="message" rows="4" required></textarea>
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
                   </div>
-                  <div class="d-grid">
-                    <button type="submit" class="btn btn-secondary">Send message</button>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
                   </div>
                 </form>
               </div>
@@ -516,24 +834,109 @@
           </div>
         </div>
       </div>
-    </section> -->
-    <!-- End of section -->
+    </section>
+
   </main>
 
+  <!-- Footer -->
+  <footer class="py-5" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5>Iqbal Ramadhani</h5>
+          <p class="text-white-50">Web Developer & Backend Engineer based in Bandung, Indonesia.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="https://github.com/iqbalramadhani" target="_blank" class="text-white-50"><i class="fab fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/iqbal-r-ab680411a/" target="_blank" class="text-white-50"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://medium.com/@iqbal.ramadhani55" target="_blank" class="text-white-50"><i class="fab fa-medium fa-lg"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4 mb-md-0">
+          <h5>Links</h5>
+          <ul class="list-unstyled text-white-50">
+            <li><a href="#hero" class="text-white-50 text-decoration-none">Home</a></li>
+            <li><a href="#about" class="text-white-50 text-decoration-none">About</a></li>
+            <li><a href="#experience" class="text-white-50 text-decoration-none">Experience</a></li>
+            <li><a href="#projects" class="text-white-50 text-decoration-none">Projects</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4 mb-md-0">
+          <h5>Services</h5>
+          <ul class="list-unstyled text-white-50">
+            <li><a href="#" class="text-white-50 text-decoration-none">Web Development</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Backend Systems</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">API Development</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Consulting</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Newsletter</h5>
+          <p class="text-white-50">Stay updated with my latest projects and articles.</p>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Enter your email">
+            <button class="btn btn-primary" type="button"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4 border-secondary">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="text-white-50 small mb-0">&copy; 2024 Iqbal Ramadhani. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Core -->
   <script src="vendor/@popperjs/core/dist/umd/popper.min.js"></script>
   <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="vendor/headroom.js/dist/headroom.min.js"></script>
 
-  <!-- Vendor JS -->
-  <script src="vendor/onscreen/dist/on-screen.umd.min.js"></script>
-  <script src="vendor/jarallax/dist/jarallax.min.js"></script>
-  <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="vendor/vivus/dist/vivus.min.js"></script>
-  <script src="vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+  <!-- Smooth Scroll -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
 
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar-main');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Simple scroll animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.timeline-item, .project-card, .skill-category').forEach(el => {
+      el.style.opacity = '0';
+      observer.observe(el);
+    });
+  </script>
 
   <!-- Pixel JS -->
   <script src="assets/js/pixel.js"></script>
