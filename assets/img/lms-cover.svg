@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Abstract interface preview of a learning management system">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111c2f"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0b84c"/>
+      <stop offset="1" stop-color="#d99a2b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#d99a2b" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#d99a2b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="690" cy="70" r="190" fill="url(#glow)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04">
+    <path d="M0 100h800M0 200h800M0 300h800M0 400h800"/>
+    <path d="M100 0v500M200 0v500M300 0v500M400 0v500M500 0v500M600 0v500M700 0v500"/>
+  </g>
+
+  <!-- Browser window -->
+  <rect x="70" y="64" width="660" height="372" rx="18" fill="#152238" stroke="#ffffff" stroke-opacity="0.09"/>
+  <rect x="70" y="64" width="660" height="44" rx="18" fill="#1b2a44"/>
+  <rect x="70" y="90" width="660" height="18" fill="#1b2a44"/>
+  <circle cx="96" cy="86" r="5" fill="#f26d6d"/>
+  <circle cx="114" cy="86" r="5" fill="#f2c14c"/>
+  <circle cx="132" cy="86" r="5" fill="#63d18a"/>
+  <rect x="160" y="79" width="220" height="14" rx="7" fill="#0b1220" opacity="0.7"/>
+
+  <!-- Sidebar -->
+  <rect x="70" y="108" width="132" height="328" fill="#111c2f"/>
+  <rect x="92" y="132" width="86" height="10" rx="5" fill="#f0b84c" opacity="0.9"/>
+  <g fill="#ffffff" fill-opacity="0.18">
+    <rect x="92" y="170" width="90" height="9" rx="4.5"/>
+    <rect x="92" y="196" width="72" height="9" rx="4.5"/>
+    <rect x="92" y="222" width="84" height="9" rx="4.5"/>
+    <rect x="92" y="248" width="62" height="9" rx="4.5"/>
+  </g>
+  <rect x="84" y="164" width="4" height="22" rx="2" fill="#f0b84c"/>
+
+  <!-- Heading -->
+  <rect x="228" y="132" width="210" height="16" rx="8" fill="#ffffff" opacity="0.82"/>
+  <rect x="228" y="160" width="140" height="9" rx="4.5" fill="#ffffff" opacity="0.22"/>
+
+  <!-- Course cards -->
+  <g>
+    <rect x="228" y="196" width="152" height="112" rx="12" fill="#1c2c47" stroke="#ffffff" stroke-opacity="0.07"/>
+    <rect x="228" y="196" width="152" height="52" rx="12" fill="#2a3d5e"/>
+    <circle cx="252" cy="222" r="12" fill="url(#accent)" opacity="0.85"/>
+    <rect x="244" y="260" width="98" height="9" rx="4.5" fill="#ffffff" opacity="0.55"/>
+    <rect x="244" y="278" width="70" height="7" rx="3.5" fill="#ffffff" opacity="0.2"/>
+  </g>
+  <g>
+    <rect x="396" y="196" width="152" height="112" rx="12" fill="#1c2c47" stroke="#ffffff" stroke-opacity="0.07"/>
+    <rect x="396" y="196" width="152" height="52" rx="12" fill="#2a3d5e"/>
+    <circle cx="420" cy="222" r="12" fill="#4f8cff" opacity="0.75"/>
+    <rect x="412" y="260" width="110" height="9" rx="4.5" fill="#ffffff" opacity="0.55"/>
+    <rect x="412" y="278" width="58" height="7" rx="3.5" fill="#ffffff" opacity="0.2"/>
+  </g>
+  <g>
+    <rect x="564" y="196" width="140" height="112" rx="12" fill="#1c2c47" stroke="#ffffff" stroke-opacity="0.07"/>
+    <rect x="564" y="196" width="140" height="52" rx="12" fill="#2a3d5e"/>
+    <circle cx="588" cy="222" r="12" fill="#63d18a" opacity="0.7"/>
+    <rect x="580" y="260" width="96" height="9" rx="4.5" fill="#ffffff" opacity="0.55"/>
+    <rect x="580" y="278" width="64" height="7" rx="3.5" fill="#ffffff" opacity="0.2"/>
+  </g>
+
+  <!-- Progress panel -->
+  <rect x="228" y="328" width="476" height="84" rx="12" fill="#1c2c47" stroke="#ffffff" stroke-opacity="0.07"/>
+  <rect x="248" y="348" width="128" height="9" rx="4.5" fill="#ffffff" opacity="0.5"/>
+  <rect x="248" y="372" width="436" height="12" rx="6" fill="#0b1220"/>
+  <rect x="248" y="372" width="296" height="12" rx="6" fill="url(#accent)"/>
+  <circle cx="544" cy="378" r="9" fill="#f6e6c4"/>
+  <rect x="248" y="394" width="70" height="7" rx="3.5" fill="#ffffff" opacity="0.18"/>
+  <rect x="614" y="390" width="70" height="10" rx="5" fill="#ffffff" opacity="0.28"/>
+</svg>
